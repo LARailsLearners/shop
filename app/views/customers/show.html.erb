@@ -1,0 +1,7 @@
+<h1> <%= @customer.name %> </h1>
+
+<ol>
+<% @customer.products.each do |c| %>
+  <li><%= c.name %> - <%= c.price %></li>
+<% end %>
+</ol> 
